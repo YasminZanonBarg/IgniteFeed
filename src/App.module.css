@@ -1,0 +1,21 @@
+.wrapper {
+    max-width: 70rem;   
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    /*Conceitos de Grid Layout*/    
+    display: grid;
+    grid-template-columns: 256px 1fr; /*1º elemento terá uma largura fixa de 256px e o 2º irá se adaptar ao tamanho da tela*/
+    gap: 32px; /*Distancia entre os dois elementos*/
+    align-items: flex-start;/*alinhando elementos para o topo*/
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr; 
+    }
+}
